@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Banner */
+.background--banner{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    background-color: black;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%,rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
+}
+/* Menu */
+.menu{
+    width: 95%;
+    margin-inline:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 15px;
+}
+.navigation{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+}
+@media (min-width:400px) {
+    .navigation{
+        gap: 25px;
+    }
+}
+/* Left menu */
+.logo{
+    width: 90px;
+    height: 40px;
+}
+@media (min-width:768px) {
+    .logo{
+        width: 110px;
+        height: 60px;
+    }
+}
+@media (min-width:992px) {
+    .nav-left li:nth-child(2){
+        display: none;
+    }
+}
+.nav-left li:nth-child(3),
+.nav-left li:nth-child(4),
+.nav-left li:nth-child(5),
+.nav-left li:nth-child(6),
+.nav-left li:nth-child(7){
+    display: none;
+}
+@media (min-width:992px) {
+    .nav-left li:nth-child(3),
+    .nav-left li:nth-child(4),
+    .nav-left li:nth-child(5),
+    .nav-left li:nth-child(6),
+    .nav-left li:nth-child(7){
+        display: flex;
+    }
+}
+/* Right menu */
+.user{
+    width: 40px;
+    overflow: hidden;
+}
+.nav-right li:nth-child(1),
+.nav-right li:nth-child(2),
+.nav-right li:nth-child(3),
+.nav-right li:nth-child(4){
+    display: none;
+}
+@media (min-width:330px) {
+    .nav-right li:nth-child(1),
+    .nav-right li:nth-child(4){
+        display: flex;
+    }
+}
+@media (min-width:992px) {
+    .nav-right li:nth-child(2),
+    .nav-right li:nth-child(3){
+        display: flex;
+    }
+}
+/* imagotipo */
+.imgtype{
+    flex: 1;
+    width: 95%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+.imgtype-picture{
+    min-width: 500px;
+}
+.imgtype-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.imgtype-info p{
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+.imgtype-info p:nth-child(1){
+    border: 1px solid white;
+    background-color: white;
+    cursor: pointer;
+}
+.imgtype-info p:nth-child(2){
+    border: 1px solid #6d6d63b3;
+    background-color: #6d6d63b3;
+    cursor: pointer;
+    color: white;
+}
+.imgtype-info p:nth-child(1):hover,
+.imgtype-info p:nth-child(2):hover{
+    background-color: transparent;
+    color: white;
+}
+/* footer */
+.footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: black;
+}
+.footer-container{
+    width: 95%;
+    margin-inline:auto;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+}
+.icons li{
+    width: 30px;
+    height: 30px;
+}
+
+.information{
+    display: grid;
+    color: rgb(133, 133, 133);
+    gap: 20px;
+    margin-block:20px;
+    font-size: 15px;
+}
+@media (min-width:400px) {
+    .information{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:768px) {
+    .information{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:992px) {
+    .information{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.information p:hover{
+    color: white;
+}
+
+.catalogue{
+    padding-block: 2px;
+    background-color: black;
+    color: white;
+}
+.catalogue-movies{
+    width: 95%;
+    margin-inline: auto;
+}
+.catalogue-movies h1,
+.catalogue-movies h2{
+    padding: 10px;
+}
+
+.movies{
+    overflow-x: scroll;
+    scroll-behavior: auto;
+    display: flex;
+    gap: 12px;
+}
+
+.movies::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+} 
+
+.movie{
+    min-width: 200px;
+    height: auto;
+}

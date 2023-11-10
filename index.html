@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+  </head>
+  <body>
+    <div id="app">
+      <aside class="background--banner">
+        <video muted autoplay loop poster="assets/background-image.webp">
+            <source src="assets/background-video.mp4" type="video/mp4">
+            <img src="assets/background-image.webp" alt="picture background">
+        </video>
+        <div class="banner">
+            <div class="menu">
+                <nav>
+                    <ul class="navigation nav-left">
+                        <li class="logo"><a href="#"><img src="assets/netflix.png" alt="Netflix"></a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Start</a></li>
+                        <li><a href="#">Series</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Populars News</a></li>
+                        <li><a href="#">My List</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="navigation nav-right">
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+                        <li class="user"><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="imgtype">
+                <div class="imgtype-picture">
+                    <img src="assets/imagotipo-jurassic.webp" alt="picture logo-jurassic">
+                </div>
+                <div class="imgtype-info">
+                    <p>▶ Play</p>
+                    <p>ⓘ More Info</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="catalogue">
+        <section class="catalogue-movies">
+            <h1>Popular Movies</h1>
+            <div class="movies" id="populars">
+
+            </div>
+        </section>
+        <section class="catalogue-movies">
+            <h2>Premier Movies</h2>
+            <div class="movies" id="premiere">
+                
+            </div>
+        </section>
+        <section class="catalogue-movies">
+            <h2>Most Viewed Movies</h2>
+            <div class="movies" id="viewed">
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="icons">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <div class="information">
+                <p>FAQ</p>
+                <p>Cookies Preference</p>
+                <p>Support Center</p>
+                <p>Account</p>
+                <p>Privacy</p>
+                <p>Contact us</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
